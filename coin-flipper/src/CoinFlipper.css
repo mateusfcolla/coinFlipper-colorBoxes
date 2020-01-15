@@ -1,0 +1,16 @@
+/* General Styling */
+.CoinFlipper{
+    background-color: white;
+}
+
+/* Text Styling */
+.CoinFlipper h1{
+    margin: 1em;
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+/* Block Styling */
+.CoinFlipper .coin-container{
+
+}

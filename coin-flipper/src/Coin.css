@@ -1,0 +1,44 @@
+/* General Styling */
+.Coin{
+    background-color: white;
+    margin-top: 19vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+.Coin .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5em;
+    min-width: 30vw;
+}
+
+/* Button Styling */
+.Coin button{
+    display: block;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    /* Actual Styling */
+    background-color: transparent;
+    border: 0.05em solid rgb(0, 0, 0);
+    padding: 0.5em 1em 0.55em 1em;
+    margin: 2em;
+    border-radius: 0.5em;
+}
+.Coin button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.Coin button::selection{background: transparent;}
+.Coin button:focus{outline: 0;}
+
+/* Image Styling */
+.Coin img{
+    width: 250px;
+    height: 250px;
+}

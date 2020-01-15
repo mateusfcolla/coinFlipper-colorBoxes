@@ -9,7 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
-  background-color: rgb(41, 41, 41);
-  color: rgb(245, 245, 245);
+::selection{
+  background: black;
+  color: white;
 }

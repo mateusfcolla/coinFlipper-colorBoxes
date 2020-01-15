@@ -17,7 +17,9 @@ class CoinFlipper extends Component{
         return(
             <section className="CoinFlipper">
                 <h1>{this.props.title}</h1> 
-                <Coin></Coin>
+                <div className="coin-container">
+                    <Coin></Coin>
+                </div>
             </section>
         )
     }
