@@ -1,0 +1,13 @@
+.Box{
+    display: inline-block;
+    min-width: 15em;
+    min-height: 15em;
+    border: none;
+    transition: 0.3s;
+}
+
+.Box:hover{
+    transform: scale(1.02);
+}
+
+.Box:focus{outline: 0;}
