@@ -6,7 +6,8 @@ import ColorBoxes from './ColorBoxes'
 function App() {
   return (
     <div className="App">
-      <ColorBoxes/>
+      <h1>Color Boxes</h1>
+      <ColorBoxes maxBoxes={8}/>
     </div>
   );
 }

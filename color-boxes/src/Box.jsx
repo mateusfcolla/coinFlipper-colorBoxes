@@ -7,27 +7,18 @@ class Box extends Component{
     constructor(props){
         super(props);
         this.state = {
-            bg_color: this.genColor()
+            bg_color: this.props.genColor()
         }
         this.updateColor = this.updateColor.bind(this);
     }
     //Methods
-    // Generate color method
-    genColor(){
-        let values = [0, 1, 2];
-        values.forEach((position) => {
-            let color = Math.floor(Math.random() * 255);
-            values[position] = color;
-        });
-        console.log(values);
-        return `rgb(${values[0]}, ${values[1]}, ${values[2]})`
-    }
-    // Update color method
     updateColor(){
+        console.log('updating...')
         this.setState({
-            bg_color: this.genColor()
+            bg_color: this.props.genColor()
         })
     }
+    // Generate color method
     //Render Method
     render(){
         return(

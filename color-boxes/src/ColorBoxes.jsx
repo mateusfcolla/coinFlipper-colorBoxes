@@ -15,11 +15,19 @@ class ColorBoxes extends Component{
         }
     }
     //Methods
+    genColor(){
+        let values = [0, 1, 2];
+        values.forEach((position) => {
+            let color = Math.floor(Math.random() * 255);
+            values[position] = color;
+        });
+        return `rgb(${values[0]}, ${values[1]}, ${values[2]})`
+    }
     //Render Method
     render(){
         return(
             <section className="ColorBoxes">
-            {this.state.boxes.map(n => <Box/>)}
+            {this.state.boxes.map(n => <Box genColor={this.genColor}/>)}
             </section>
         )
     }
