@@ -26,7 +26,7 @@ class Box extends Component{
     //Render Method
     render(){
         return(
-            <button className="Box" onClick={this.updateColor} style={{backgroundColor: this.state.bg_color}}>{this.newEmoji()}</button>
+            <button className="Box" onClick={this.updateColor} style={{backgroundColor: this.state.bg_color}}><p>{this.newEmoji()}</p></button>
         )
     }
 }

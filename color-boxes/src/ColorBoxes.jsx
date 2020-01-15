@@ -27,7 +27,7 @@ class ColorBoxes extends Component{
     render(){
         return(
             <section className="ColorBoxes">
-            {this.state.boxes.map(n => <Box genColor={this.genColor}/>)}
+            {this.state.boxes.map(n => <Box genColor={this.genColor} key={n}/>)}
             </section>
         )
     }
