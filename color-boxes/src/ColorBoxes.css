@@ -5,5 +5,13 @@
     align-items: center;
     width: 50vw;
     position: absolute;
-    
+
 }
+
+@media only screen and (max-width: 854px){
+    .ColorBoxes{
+        min-width: 8em;
+        min-height: 8em;
+        width: 30vh;
+    }
+} 

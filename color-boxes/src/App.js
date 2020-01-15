@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <h1>Color Boxes</h1>
-      <ColorBoxes maxBoxes={8}/>
+      <div className="boxes-container">
+        <ColorBoxes maxBoxes={8} key={737}/>
+      </div>
     </div>
   );
 }
